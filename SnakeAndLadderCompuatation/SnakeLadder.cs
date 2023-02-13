@@ -12,7 +12,7 @@ namespace SnakeAndLadderCompuatation
     {
         public static void Computation()
         {
-            int position = 0;
+            int position = 0, count = 0;
             string Player1 = "Rahul";
             Console.WriteLine("Player name is {0} and its position is {1}", Player1, position);
             while (position < 100)
@@ -57,6 +57,7 @@ namespace SnakeAndLadderCompuatation
                         break;
                 }
             }
+            Console.WriteLine("\nNumber of times the die rolled will be:"+count);
         }
     }
 }
