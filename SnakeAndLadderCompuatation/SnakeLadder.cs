@@ -32,7 +32,15 @@ namespace SnakeAndLadderCompuatation
                     case 2:
                         Console.WriteLine("Getting Ladder");
                         position += RollDie;
-                        Console.WriteLine("After getting ladder player moves ahead by the nnumber of position received in the die:" + position);
+                        if(position > 100)
+                        {
+                            position = position - RollDie;
+                            Console.WriteLine("After getting ladder player position more than 100th position:" +position);
+                        }
+                        else
+                        {
+                            Console.WriteLine("After getting ladder player position:"+position);
+                        }
                         break;
                     case 3:
                         Console.WriteLine("Snake Bite");
