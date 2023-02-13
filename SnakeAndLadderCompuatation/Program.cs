@@ -7,6 +7,7 @@ namespace SnakeAndLadderCompuatation
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to the snake and Ladder Computation Program");
+            SnakeLadder.Computation();
         }
     }
 }
